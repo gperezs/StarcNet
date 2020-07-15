@@ -27,7 +27,6 @@ echo "creating object patches..."
 bash create_dataset.sh 1
 echo "classifying objects..."
 python src/test_net.py \
-		   --demo 1 \
                    --test-batch-size 64 \
                    --data_dir data/ \
                    --dataset raw_32x32\
