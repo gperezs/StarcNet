@@ -2,6 +2,8 @@
 
 Pytorch code for classification of star clusters from galaxy images by the Hubble Space Telescope (HST). The target galaxies used in this project are provided by the [Legacy ExtraGalactic UV Survey (LEGUS)](https://archive.stsci.edu/prepds/legus/). 
 
+The approximate running time of StarcNet in a Galaxy with around 3,000 objects is ~4 minutes (~4s with a GPU). 
+
 ![title_image](title_im.jpg)
 
 ## Getting started
