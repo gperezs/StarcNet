@@ -46,7 +46,7 @@ def parse_args():
 args = parse_args()
 
 # loading dataset
-data_test, _, _ = du.load_db_demo(os.path.join(args.data_dir,'test_'+args.dataset+'.dat'))
+data_test, _, _ = du.load_db(os.path.join(args.data_dir,'test_'+args.dataset+'.dat'))
 label_test = np.zeros((data_test.shape[0]))
 mean = np.load(args.data_dir+'mean.npy')
 
