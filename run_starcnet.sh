@@ -35,7 +35,6 @@ python src/test_net.py \
                    --checkpoint starcnet.pth \
 
 python src/preds2table.py
-python src/addpreds2tab.py
 
 ENDTIME=$(date +%s)
 echo "---------------------------------------------"

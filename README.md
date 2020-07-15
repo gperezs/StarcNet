@@ -55,11 +55,7 @@ If galaxy mosaics and cluster catalogs are already on disk:
 bash run_starcnet.sh
 ```
 
-The original code comes ready to download catalog and classify star clusters from galaxy NGC1566. StarcNet predictions are saved into `output/` folder:
-
-* Comma-separated values (`.csv`) file with galaxy, id, coordinates and predictions: `predictions.csv`
-* Text file with ids, coordinates, and predictions: `output.tab`
-* Text file with ids, coordinates, predictions, and scores: `output_scores.tab`
+The original code comes ready to download catalog and classify star clusters from galaxy NGC1566. StarcNet predictions are saved into `output/predictions.csv` 
 
 -------------------------
 
