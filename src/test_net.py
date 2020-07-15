@@ -113,4 +113,4 @@ if __name__ == '__main__':
     test_accuracy, targets, predictions, scores = test(test_loader, args)     
     
     # save scores (predictions + targets)
-    np.save(os.path.join('output','demo_scores'), scores)
+    np.save(os.path.join('output','scores'), scores)
