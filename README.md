@@ -28,12 +28,12 @@ To activate and enter the environment, run:
 source activate starcnet
 ```
 
-**5 Installing dependencies:** To install requirements, run:
+To install requirements, run:
 ```
 conda install --yes --file requirements.txt 
 ```
 
-**6. PyTorch:** To install pytorch follow the instructions [here](https://pytorch.org/).
+**5. PyTorch:** To install pytorch follow the instructions [here](https://pytorch.org/).
 
 -------------------------
 
