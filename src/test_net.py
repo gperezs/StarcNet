@@ -6,7 +6,7 @@ import time
 import numpy as np
 
 sys.path.insert(0, './src/utils')
-sys.path.insert(0, './models')
+sys.path.insert(0, './model')
 
 import data_utils as du
 import argparse
