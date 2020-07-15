@@ -24,9 +24,9 @@ then
 fi
 
 echo "creating object patches..."
-bash create_dataset.sh 1
+bash ./create_dataset.sh 1
 echo "classifying objects..."
-python src/test_net.py \
+python ./src/test_net.py \
 		   --demo 1 \
                    --test-batch-size 64 \
                    --data_dir data/ \
@@ -35,8 +35,8 @@ python src/test_net.py \
                    --cuda  --gpu 0 \
                    --checkpoint model.pth \
 
-python src/preds2table.py
-python src/addpreds2tab.py
+python ./src/preds2table.py
+python ./src/addpreds2tab.py
 
 ENDTIME=$(date +%s)
 echo "---------------------------------------------"
