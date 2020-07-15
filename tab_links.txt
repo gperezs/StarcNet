@@ -1,0 +1,1 @@
+https://archive.stsci.edu/hlsps/legus/ngc4258-n/cluster_catalogs/deterministic/cat_UBVI_avgapcor_magcut_ci1.4_ngc4258s.tab
