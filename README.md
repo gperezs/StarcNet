@@ -48,11 +48,11 @@ StarcNet will classify objects from a galaxy or list of galaxies in `targets.txt
 To run demo, if galaxy mosaics and cluster catalogs need to be downloaded:
 
 ```
-bash demo.sh 1
+bash run_starcnet.sh 1
 ```
 If galaxy mosaics and cluster catalogs are already on disk:
 ```
-bash demo.sh
+bash run_starcnet.sh
 ```
 
 The original code comes ready to download catalog and classify star clusters from galaxy NGC1566. StarcNet predictions are saved into `output/` folder:
