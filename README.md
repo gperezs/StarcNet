@@ -43,7 +43,7 @@ StarcNet will classify objects from a galaxy or list of galaxies in `targets.txt
 
 * Links to the mosaic(s) files should be in `frc_fits_links.txt`.
 * Links to the cluster catalog(s) (with objects coordinates) should be in `tab_links.txt`.
-* If galaxy mosaics are not in the LEGUS catalogs (or any other online survey in `.FITS` and `.tab`), they should be saved manually into `legus/frc_fits_files/` and `legus/tab_files/` folders respectively.
+* If galaxy mosaics are not in the LEGUS catalogs (or any other online survey in `.FITS` and `.tab`), they should be saved manually into `legus/frc_fits_files/` and `legus/tab_files/` folders respectively. **Note:** .tab file should include at least three columns: object id, and X,Y coordinates.
 
 To run demo, if galaxy mosaics and cluster catalogs need to be downloaded:
 

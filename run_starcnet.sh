@@ -32,7 +32,7 @@ python src/test_net.py \
                    --dataset raw_32x32\
                    --save_dir model/ \
                    --cuda  --gpu 0 \
-                   --checkpoint model.pth \
+                   --checkpoint starcnet.pth \
 
 python src/preds2table.py
 python src/addpreds2tab.py
