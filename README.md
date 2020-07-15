@@ -13,6 +13,7 @@ Pytorch code for classification of star clusters from galaxy images by the Hubbl
 **Downloading the repository:** To download this repository run:
 ```
 git clone https://github.com/gperezs/StarcNet.git
+cd StarcNet
 ```
 
 **Installing Anaconda:** We recommend using the free [Anaconda Python distribution](https://www.anaconda.com/download/), which provides an easy way for you to handle package dependencies. Please be sure to download the Python 3 version.
