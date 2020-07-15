@@ -1,5 +1,1 @@
-https://archive.stsci.edu/hlsps/legus/mosaics/ngc1512_ngc1510/hlsp_legus_hst_wfc3_ngc5194-ngc5195-mosaic_f275w_v1_sci.fits
-https://archive.stsci.edu/hlsps/legus/mosaics/ngc1512_ngc1510/hlsp_legus_hst_wfc3_ngc5194-ngc5195-mosaic_f336w_v1_sci.fits
-https://archive.stsci.edu/hlsps/legus/mosaics/ngc1512_ngc1510/hlsp_legus_hst_wfc3_ngc5194-ngc5195-mosaic_f435w_v1_sci.fits
-https://archive.stsci.edu/hlsps/legus/mosaics/ngc1512_ngc1510/hlsp_legus_hst_wfc3_ngc5194-ngc5195-mosaic_f555w_v1_sci.fits
-https://archive.stsci.edu/hlsps/legus/mosaics/ngc1512_ngc1510/hlsp_legus_hst_wfc3_ngc5194-ngc5195-mosaic_f814w_v1_sci.fits
+https://archive.stsci.edu/hlsps/legus/ngc1566/ngc1566_drc.tar.gz
