@@ -61,6 +61,14 @@ The original code comes ready to download catalog and classify star clusters fro
 
 -------------------------
 
+### Preditions Visualization
+
+To produce the galaxy image with predictions run:
+```
+python src/run_visualization.py
+```
+-------------------------
+
 ### Acknowledgements
 
 This work is supported by the [National Science Foundation (NSF)](https://nsf.gov/index.jsp) of the United States under the award [\#1815267](https://nsf.gov/awardsearch/showAward?AWD_ID=1815267).

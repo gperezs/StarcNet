@@ -2,3 +2,8 @@
 .pyc
 .swp
 .sh.swp
+.dat
+
+#folders
+output/
+legus/
