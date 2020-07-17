@@ -59,14 +59,15 @@ bash run_starcnet.sh
 
 The original code comes ready to download catalog and classify star clusters from galaxy NGC1566. StarcNet predictions are saved into `output/predictions.csv` 
 
--------------------------
-
 ### Preditions Visualization
 
 To produce the galaxy image with predictions run:
 ```
 python src/run_visualization.py
 ```
+
+Output visualization is saved to `output/predictions.png`.
+
 -------------------------
 
 ### Acknowledgements
