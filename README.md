@@ -42,6 +42,11 @@ conda install --yes --file requirements.txt
 
 StarcNet will classify objects from a galaxy or list of galaxies in `targets.txt`. It can run using catalogs saved locally or using online LEGUS catalogs. The original code comes ready to download catalog and classify star clusters from galaxy NGC1566. StarcNet predictions are saved into `output/predictions.csv`.
 
+To run StarcNet demo with NGC1566:
+
+```
+bash run_starcnet.sh 1
+```
 
 ### Run StarcNet with local data
 
