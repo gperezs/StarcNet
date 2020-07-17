@@ -66,7 +66,7 @@ To produce the galaxy image with predictions run:
 python src/run_visualization.py
 ```
 
-Output visualization is saved to `output/predictions.png`.
+The output visualization is saved into `output/predictions.png`.
 
 -------------------------
 
