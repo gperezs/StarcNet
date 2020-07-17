@@ -57,6 +57,7 @@ bash run_starcnet.sh 1
 5. Name of .tab file with the cluster catalog(s) (with object coordinates) should be in `tab_links.txt`.
 6. Run `bash run_starcnet.sh`
 
+**Note:** The `.tab` file must have 3 columns, first one with ids and the last two with the coordinates. If your catalog only has the two columns of the coordinates you can use `src/add_ids_to_coords.py` file.
 
 ### Run StarcNet with online LEGUS catalogs
 
