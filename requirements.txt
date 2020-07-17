@@ -5,3 +5,4 @@
 astropy
 scipy
 scikit-image
+wget
