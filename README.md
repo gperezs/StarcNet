@@ -50,21 +50,16 @@ StarcNet will classify objects from a galaxy or list of galaxies in `targets.txt
 3. Name of galaxy should be in `targets.txt`.
 4. Name of the mosaic(s) files should be in `frc_fits_links.txt`.
 5. Name of .tab file with the cluster catalog(s) (with object coordinates) should be in `tab_links.txt`.
-6. Run:
-```
-bash run_starcnet.sh
-```
+6. Run `bash run_starcnet.sh`
+
 
 ### Run StarcNet with online LEGUS catalogs
 
 1. Name of galaxy should be in `targets.txt`.
 2. Links to the mosaic(s) files should be in `frc_fits_links.txt`.
 3. Links to the cluster catalog(s) (with objects coordinates) should be in `tab_links.txt`.
-4. Run:
+4. Run `bash run_starcnet.sh 1`
 
-```
-bash run_starcnet.sh 1
-```
 
 ### Preditions visualization
 
