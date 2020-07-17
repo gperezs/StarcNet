@@ -46,7 +46,7 @@ StarcNet will classify objects from a galaxy or list of galaxies in `targets.txt
 ### Run StarcNet with local data
 
 1. Save the 5 mosaic's `.FITS` files into `legus/frc_fits_files/` folder.
-2. Save catalog `.tab` file into `legus/tab_files`.
+2. Save catalog `.tab` file into `legus/tab_files/`.
 3. Name of galaxy should be in `targets.txt`.
 4. Name of the mosaic(s) files should be in `frc_fits_links.txt`.
 5. Name of .tab file with the cluster catalog(s) (with object coordinates) should be in `tab_links.txt`.
