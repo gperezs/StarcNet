@@ -38,28 +38,35 @@ conda install --yes --file requirements.txt
 **5. PyTorch:** To install pytorch follow the instructions [here](https://pytorch.org/).
 
 -------------------------
-
 ## Run StarcNet
 
-StarcNet will classify objects from a galaxy or list of galaxies in `targets.txt`.
+StarcNet will classify objects from a galaxy or list of galaxies in `targets.txt`. It can run using catalogs saved locally or using online LEGUS catalogs. The original code comes ready to download catalog and classify star clusters from galaxy NGC1566. StarcNet predictions are saved into `output/predictions.csv`.
 
-* Links to the mosaic(s) files should be in `frc_fits_links.txt`.
-* Links to the cluster catalog(s) (with objects coordinates) should be in `tab_links.txt`.
-* If galaxy mosaics are not in the LEGUS catalogs (or any other online survey in `.FITS` and `.tab`), they should be saved manually into `legus/frc_fits_files/` and `legus/tab_files/` folders respectively. **Note:** .tab file should include at least three columns: object id, and X,Y coordinates.
 
-To run demo, if galaxy mosaics and cluster catalogs need to be downloaded:
+### Run StarcNet with local data
 
-```
-bash run_starcnet.sh 1
-```
-If galaxy mosaics and cluster catalogs are already on disk:
+1. Save the 5 mosaic's `.FITS` files into `legus/frc_fits_files/` folder.
+2. Save catalog `.tab` file into `legus/tab_files`.
+3. Name of galaxy should be in `targets.txt`.
+4. Name of the mosaic(s) files should be in `frc_fits_links.txt`.
+5. Name of .tab file with the cluster catalog(s) (with object coordinates) should be in `tab_links.txt`.
+6. Run:
 ```
 bash run_starcnet.sh
 ```
 
-The original code comes ready to download catalog and classify star clusters from galaxy NGC1566. StarcNet predictions are saved into `output/predictions.csv` 
+### Run StarcNet with online LEGUS catalogs
 
-### Preditions Visualization
+1. Name of galaxy should be in `targets.txt`.
+2. Links to the mosaic(s) files should be in `frc_fits_links.txt`.
+3. Links to the cluster catalog(s) (with objects coordinates) should be in `tab_links.txt`.
+4. Run:
+
+```
+bash run_starcnet.sh 1
+```
+
+### Preditions visualization
 
 To produce the galaxy image with predictions run:
 ```
