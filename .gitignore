@@ -7,3 +7,7 @@
 #folders
 output/
 legus/
+data/raw_32x32/
+model/__pycache__/
+src/utils/__pycache__/
+data/test_raw_32x32.dat
