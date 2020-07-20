@@ -56,8 +56,6 @@ In the following sections we show two ways to setup StarcNet. Use the one that s
 
 ### Using virtualenv
 
-In this section we show how to setup using virtualenv.
-
 2. **Install virtualenv:** To install virtualenv run after installing pip:
 
 ```
@@ -80,11 +78,9 @@ $ pip install -r requirements.txt
 ```
 $ pip install torch torchvision
 ```
-***
 
+-------
 ### Using Anaconda
-
-In this section we show how to setup using Anaconda.
 
 2. **Install Anaconda:** We recommend using the free [Anaconda Python
 distribution](https://www.anaconda.com/download/), which provides an
