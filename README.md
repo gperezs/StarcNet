@@ -8,7 +8,7 @@
 
 <p align="center">
     <a href="https://github.com/gperezs/StarcNet/commits/master">
-    <img src="https://img.shields.io/github/last-commit/gperezs/StarcNet.svg?style=flat-square&logo=github&logoColor=white"
+    <img src="https://img.shields.io/github/last-commit/ArmynC/ArminC-AutoExec.svg?style=flat-square&logo=github&logoColor=white"
          alt="GitHub last commit">
     <a href="https://github.com/gperezs/StarcNet/issues">
     <img src="https://img.shields.io/github/issues-raw/ArmynC/ArminC-AutoExec.svg?style=flat-square&logo=github&logoColor=white"
