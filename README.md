@@ -18,19 +18,6 @@
          alt="GitHub pull requests">
 </p>
 
-## Table of contents
-
-* [About](#about)
-* [Installing / Getting started](#installing-/-getting-started)
-	* [Using Anaconda](#using-anaconda)
-	* [Using Virtualenv](#using-virtualenv)
-* [Run StarcNet](#run-starcnet)
-	* [Using local data](#run-starcnet-with-local-data)
-	* [Using LEGUS catalogs](#run-starcnet-with-online-legus-catalogs)
-* [Acknowledgements](#acknowledgements)
-
-
-## About
 
 PyTorch code for classification of star clusters from galaxy images
 taken by the Hubble Space Telescope (HST) using StarcNet. 
@@ -57,6 +44,10 @@ objects is about 4 mins on a CPU (4 secs with a GPU).
 
 ## Installing / Getting started
 
+### Using Anaconda
+
+In this section we show how to setup using Anaconda.
+
 1. **Clone the repository:** To download this repository run:
 ```
 $ git clone https://github.com/gperezs/StarcNet.git
@@ -80,6 +71,38 @@ $ conda install --yes --file requirements.txt
 ```
 
 4. **PyTorch:** To install pytorch follow the instructions [here](https://pytorch.org/).
+
+### Using virtualenv
+
+In this section we show how to setup using virtualenv.
+
+1. **Clone the repository:** To download this repository run:
+```
+$ git clone https://github.com/gperezs/StarcNet.git
+$ cd StarcNet
+```
+2. **Install virtualenv:** To install virtualenv run after installing pip:
+
+```
+$ sudo pip3 install virtualenv 
+```
+
+3. **Virtualenv  environment:** To set up and activate the virtual environment,
+run:
+```
+$ virtualenv -p /usr/bin/python3 venv3
+$ source venv3/bin/activate
+```
+
+To install requirements, run:
+```
+$ pip install -r requirements.txt
+```
+
+4. **PyTorch:** To install pytorch run:
+```
+$ pip install torch torchvision
+```
 
 ## Run StarcNet
 
