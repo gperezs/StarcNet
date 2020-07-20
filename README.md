@@ -19,13 +19,14 @@
 </p>
 
 ## Table of contents
+
 * [About](#about)
 * [Installing / Getting started](#installing-/-getting-started)
-        * [Using Anaconda](#using-anaconda)
-        * [Using Virtualenv](#using-virtualenv)
+	* [Using Anaconda](#using-anaconda)
+	* [Using Virtualenv](#using-virtualenv)
 * [Run StarcNet](#run-starcnet)
-        * [Using local data](#run-starcnet-with-local-data)
-        * [Using LEGUS catalogs](#run-starcnet-with-online-legus-catalogs)
+	* [Using local data](#run-starcnet-with-local-data)
+	* [Using LEGUS catalogs](#run-starcnet-with-online-legus-catalogs)
 * [Acknowledgements](#acknowledgements)
 
 
