@@ -44,43 +44,20 @@ objects is about 4 mins on a CPU (4 secs with a GPU).
 
 ## Installing / Getting started
 
-### Using Anaconda
-
-In this section we show how to setup using Anaconda.
-
 1. **Clone the repository:** To download this repository run:
 ```
 $ git clone https://github.com/gperezs/StarcNet.git
 $ cd StarcNet
 ```
-2. **Install Anaconda:** We recommend using the free [Anaconda Python
-distribution](https://www.anaconda.com/download/), which provides an
-easy way for you to handle package dependencies. Please be sure to
-download the Python 3 version.
 
-3. **Anaconda virtual environment:** To set up and activate the virtual environment,
-run:
-```
-$ conda create -n starcnet python=3.*
-$ source activate starcnet
-```
-
-To install requirements, run:
-```
-$ conda install --yes --file requirements.txt 
-```
-
-4. **PyTorch:** To install pytorch follow the instructions [here](https://pytorch.org/).
+In the following sections we show two ways to setup StarcNet. Use the one that suits you best: 
+* [Using virtualenv](#using-virtualenv)
+* [Using Anaconda](#using-anaconda)
 
 ### Using virtualenv
 
 In this section we show how to setup using virtualenv.
 
-1. **Clone the repository:** To download this repository run:
-```
-$ git clone https://github.com/gperezs/StarcNet.git
-$ cd StarcNet
-```
 2. **Install virtualenv:** To install virtualenv run after installing pip:
 
 ```
@@ -103,6 +80,30 @@ $ pip install -r requirements.txt
 ```
 $ pip install torch torchvision
 ```
+-------
+### Using Anaconda
+
+In this section we show how to setup using Anaconda.
+
+2. **Install Anaconda:** We recommend using the free [Anaconda Python
+distribution](https://www.anaconda.com/download/), which provides an
+easy way for you to handle package dependencies. Please be sure to
+download the Python 3 version.
+
+3. **Anaconda virtual environment:** To set up and activate the virtual environment,
+run:
+```
+$ conda create -n starcnet python=3.*
+$ source activate starcnet
+```
+
+To install requirements, run:
+```
+$ conda install --yes --file requirements.txt
+```
+
+4. **PyTorch:** To install pytorch follow the instructions [here](https://pytorch.org/).
+
 
 ## Run StarcNet
 
