@@ -18,6 +18,18 @@
          alt="GitHub pull requests">
 </p>
 
+## Table of contents
+* [About](#about)
+* [Installing / Getting started](#installing-/-getting-started)
+        * [Using Anaconda](#using-anaconda)
+        * [Using Virtualenv](#using-virtualenv)
+* [Run StarcNet](#run-starcnet)
+        * [Using local data](#run-starcnet-with-local-data)
+        * [Using LEGUS catalogs](#run-starcnet-with-online-legus-catalogs)
+* [Acknowledgements](#acknowledgements)
+
+
+## About
 
 PyTorch code for classification of star clusters from galaxy images
 taken by the Hubble Space Telescope (HST) using StarcNet. 
