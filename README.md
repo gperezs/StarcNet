@@ -2,9 +2,9 @@
 <p align="center">
   <img width="200" height="127" src="logo.png">
 </p>
-
-----------------------------
-### Machine Learning for Star Cluster Classification
+<p align="center">
+	Machine Learning for Star Cluster Classification
+</p>
 
 ![title_image](title_im.jpg)
 
