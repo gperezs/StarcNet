@@ -1,12 +1,23 @@
 
 <h1 align="center">
   <br>
-  <a><img width="300" height="145"src="logo.png" alt="StarcNet"></a>
+  <a><img width="200" src="logo.png" alt="StarcNet"></a>
 </h1>
 
 <h4 align="center">Machine Learning for Star Cluster Classification</h4>
 
-![title_image](title_im.jpg)
+<p align="center">
+    <a href="https://github.com/gperezs/StarcNet/commits/master">
+    <img src="https://img.shields.io/github/last-commit/ArmynC/ArminC-AutoExec.svg?style=flat-square&logo=github&logoColor=white"
+         alt="GitHub last commit">
+    <a href="https://github.com/gperezs/StarcNet/issues">
+    <img src="https://img.shields.io/github/issues-raw/ArmynC/ArminC-AutoExec.svg?style=flat-square&logo=github&logoColor=white"
+         alt="GitHub issues">
+    <a href="https://github.com/gperezs/StarcNet/pulls">
+    <img src="https://img.shields.io/github/issues-pr-raw/ArmynC/ArminC-AutoExec.svg?style=flat-square&logo=github&logoColor=white"
+         alt="GitHub pull requests">
+</p>
+
 
 PyTorch code for classification of star clusters from galaxy images
 taken by the Hubble Space Telescope (HST) using StarcNet. 
@@ -17,6 +28,8 @@ ExtraGalactic UV Survey
 (LEGUS)](https://archive.stsci.edu/prepds/legus/).
 The running time of StarcNet in a Galaxy of 3,000
 objects is about 4 mins on a CPU (4 secs with a GPU).
+
+![title_image](title_im.jpg)
 
 
 ## Table of contents
