@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a><img width="400" height="194"src="logo.png" alt="StarcNet"></a>
+  <a><img width="300" height="145"src="logo.png" alt="StarcNet"></a>
 </h1>
 
 <h4 align="center">Machine Learning for Star Cluster Classification</h4>
