@@ -1,52 +1,70 @@
 # StarcNet: Machine Learning for Star Cluster Classification
 
-Pytorch code for classification of star clusters from galaxy images by the Hubble Space Telescope (HST). The target galaxies used in this project are provided by the [Legacy ExtraGalactic UV Survey (LEGUS)](https://archive.stsci.edu/prepds/legus/). 
-
-The approximate running time of StarcNet in a Galaxy with around 3,000 objects is ~4 mins (~4 secs with a GPU). 
+PyTorch code for classification of star clusters from galaxy images
+taken by the Hubble Space Telescope (HST) using StarcNet. 
+StarcNet is a convolutional neural network (CNN) trained to classify
+5-band galaxy images into four morphological classes. 
+The target galaxies used in this project are provided by the [Legacy
+ExtraGalactic UV Survey
+(LEGUS)](https://archive.stsci.edu/prepds/legus/).
+The running time of StarcNet in a Galaxy of 3,000
+objects is about 4 mins on a CPU (4 secs with a GPU).
 
 ![title_image](title_im.jpg)
 
 ## Getting started
 
-### Prerequisites
-
-**1. Installing Git:** To install Git follow the instructions [Here](https://gist.github.com/derhuerst/1b15ff4652a867391f03).
-
-**2. Downloading the repository:** To download this repository run:
+1. **Clone the repository:** To download this repository run:
 ```
 git clone https://github.com/gperezs/StarcNet.git
 cd StarcNet
 ```
+2. **Install Anaconda:** We recommend using the free [Anaconda Python
+distribution](https://www.anaconda.com/download/), which provides an
+easy way for you to handle package dependencies. Please be sure to
+download the Python 3 version.
 
-**3. Installing Anaconda:** We recommend using the free [Anaconda Python distribution](https://www.anaconda.com/download/), which provides an easy way for you to handle package dependencies. Please be sure to download the Python 3 version.
-
-**4. Anaconda Virtual environment:** To set up a virtual environment, run:
+3. **Anaconda virtual environment:** To set up a virtual environment,
+run:
 ```
 conda create -n starcnet python=3.*
 ```
-
 To activate and enter the environment, run:
 ```
 source activate starcnet
 ```
-
 To install requirements, run:
 ```
 conda install --yes --file requirements.txt 
 ```
 
-**5. PyTorch:** To install pytorch follow the instructions [here](https://pytorch.org/).
+4. **PyTorch:** To install pytorch follow the instructions [here](https://pytorch.org/).
 
--------------------------
 ## Run StarcNet
 
-StarcNet will classify objects from a galaxy or list of galaxies in `targets.txt`. It can run using catalogs saved locally or using online LEGUS catalogs. The original code comes ready to download catalog and classify star clusters from galaxy NGC1566. StarcNet predictions are saved into `output/predictions.csv`.
+StarcNet will classify objects from a single galaxy or list of
+galaxies in `targets.txt`. 
+It can run using catalogs saved locally or using online LEGUS
+catalogs. 
+The code comes ready to download catalog and classify star clusters
+from galaxy NGC1566. 
+StarcNet predictions are
+saved into `output/predictions.csv`.
 
-To run StarcNet demo with NGC1566:
+
+To run StarcNet on NGC1566:
 
 ```
 bash run_starcnet.sh 1
 ```
+
+To produce the predictions run:
+```
+python src/run_visualization.py
+```
+
+The output is saved into `output/predictions.png`.
+
 
 ### Run StarcNet with local data
 
@@ -66,18 +84,6 @@ bash run_starcnet.sh 1
 3. Links to the cluster catalog(s) (with objects coordinates) should be in `tab_links.txt`.
 4. Run `bash run_starcnet.sh 1`
 
-
-### Preditions visualization
-
-To produce the galaxy image with predictions run:
-```
-python src/run_visualization.py
-```
-
-The output visualization is saved into `output/predictions.png`.
-
--------------------------
-
-### Acknowledgements
+## Acknowledgements
 
 This work is supported by the [National Science Foundation (NSF)](https://nsf.gov/index.jsp) of the United States under the award [\#1815267](https://nsf.gov/awardsearch/showAward?AWD_ID=1815267).
