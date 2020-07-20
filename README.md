@@ -27,26 +27,24 @@ objects is about 4 mins on a CPU (4 secs with a GPU).
 
 1. **Clone the repository:** To download this repository run:
 ```
-git clone https://github.com/gperezs/StarcNet.git
-cd StarcNet
+$ git clone https://github.com/gperezs/StarcNet.git
+$ cd StarcNet
 ```
 2. **Install Anaconda:** We recommend using the free [Anaconda Python
 distribution](https://www.anaconda.com/download/), which provides an
 easy way for you to handle package dependencies. Please be sure to
 download the Python 3 version.
 
-3. **Anaconda virtual environment:** To set up a virtual environment,
+3. **Anaconda virtual environment:** To set up and activate the virtual environment,
 run:
 ```
-conda create -n starcnet python=3.*
+$ conda create -n starcnet python=3.*
+$ source activate starcnet
 ```
-To activate and enter the environment, run:
-```
-source activate starcnet
-```
+
 To install requirements, run:
 ```
-conda install --yes --file requirements.txt 
+$ conda install --yes --file requirements.txt 
 ```
 
 4. **PyTorch:** To install pytorch follow the instructions [here](https://pytorch.org/).
@@ -66,12 +64,12 @@ saved into `output/predictions.csv`.
 To run StarcNet on NGC1566:
 
 ```
-bash run_starcnet.sh 1
+$ bash run_starcnet.sh 1
 ```
 
 To produce the predictions run:
 ```
-python src/run_visualization.py
+$ python src/run_visualization.py
 ```
 
 The output is saved into `output/predictions.png`.
