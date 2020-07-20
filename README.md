@@ -1,4 +1,7 @@
-# StarcNet: Machine Learning for Star Cluster Classification
+# StarcNet 
+## Machine Learning for Star Cluster Classification
+
+![title_image](title_im.jpg)
 
 PyTorch code for classification of star clusters from galaxy images
 taken by the Hubble Space Telescope (HST) using StarcNet. 
@@ -9,8 +12,6 @@ ExtraGalactic UV Survey
 (LEGUS)](https://archive.stsci.edu/prepds/legus/).
 The running time of StarcNet in a Galaxy of 3,000
 objects is about 4 mins on a CPU (4 secs with a GPU).
-
-![title_image](title_im.jpg)
 
 
 ## Table of contents
