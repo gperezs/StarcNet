@@ -12,7 +12,18 @@ objects is about 4 mins on a CPU (4 secs with a GPU).
 
 ![title_image](title_im.jpg)
 
-## Getting started
+
+## Table of contents
+* [Installing / Getting started](#installing-/-getting-started)
+	* [Using Anaconda](#using-anaconda)
+	* [Using Virtualenv](#using-virtualenv)
+* [Run StarcNet](#run-starcnet)
+	* [Using local data](#run-starcnet-with-local-data)
+	* [Using LEGUS catalogs](#run-starcnet-with-online-legus-catalogs)
+* [Acknowledgements](#acknowledgements)
+
+
+## Installing / Getting started
 
 1. **Clone the repository:** To download this repository run:
 ```
