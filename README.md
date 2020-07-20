@@ -80,7 +80,8 @@ $ pip install -r requirements.txt
 ```
 $ pip install torch torchvision
 ```
--------
+***
+
 ### Using Anaconda
 
 In this section we show how to setup using Anaconda.
