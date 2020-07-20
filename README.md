@@ -1,4 +1,4 @@
-# StarcNet 
+<div align="center"># StarcNet</div> 
 ### Machine Learning for Star Cluster Classification
 
 ![title_image](title_im.jpg)
