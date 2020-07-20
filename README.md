@@ -1,5 +1,5 @@
 # StarcNet 
-## Machine Learning for Star Cluster Classification
+### Machine Learning for Star Cluster Classification
 
 ![title_image](title_im.jpg)
 
