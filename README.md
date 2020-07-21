@@ -101,7 +101,7 @@ $ conda install --yes --file requirements.txt
 
 4. **PyTorch:** To install pytorch follow the instructions [here](https://pytorch.org/).
 
-
+-------
 ## Run StarcNet
 
 StarcNet will classify objects from a single galaxy or list of
