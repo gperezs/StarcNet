@@ -109,7 +109,7 @@ galaxies in `targets.txt`.
 It can run using catalogs saved locally or using online LEGUS
 catalogs. 
 The code comes ready to download catalog and classify star clusters
-from galaxy NGC1566. 
+from galaxy NGC1566 (See [demo](demo.ipynb) ipython notebook file). 
 StarcNet predictions are
 saved into `output/predictions.csv`.
 
