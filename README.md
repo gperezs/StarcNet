@@ -2,6 +2,12 @@
 <h1 align="center">
   <br>
   <a><img width="300" src="logo.png" alt="StarcNet"></a>
+  <br>
+  <a><img width="300" src="logo1.png" alt="StarcNet"></a>
+  <br>
+  <a><img width="300" src="logo2.png" alt="StarcNet"></a>
+  <br>
+  <a><img width="300" src="logo3.png" alt="StarcNet"></a>
 </h1>
 
 <h4 align="center">Machine Learning for Star Cluster Classification</h4>
