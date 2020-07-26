@@ -1,4 +1,5 @@
 import os
+import sys
 import pickle
 import numpy as np
 from astropy.io import fits
@@ -107,4 +108,30 @@ def load_db(file_name):
         dset = pickle.load(infile)
     return dset['data'], dset['coordinates'], dset['ids']
 
+
+def get_name(name):
+    """
+    Remove \n character at the en of line (if exists)
+    """
+    if name[-1] == '\n':
+        return name[0:-1]
+    else:
+        return name
+
+
+def get_tab_filenames(targets):
+    """
+    Retrieve tab filenames from a target list
+    """
+    tab_filenames = []
+    tabs = os.listdir('legus/tab_files')
+    for target in targets:
+        found = False
+        for tab in tabs:
+            if ('_'+get_name(target)+'_') in tab:
+                tab_filenames.append(tab)
+                found = True
+        if not found:
+            sys.exit('NOT FOUND: tab file not found for galaxy %s'%(target))
+    return tab_filenames
 

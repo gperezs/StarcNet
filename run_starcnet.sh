@@ -13,8 +13,7 @@ if [ -d "data/raw_32x32" ]; then rm -Rf data/raw_32x32; fi
 
 if [ $DOWNLOAD -eq 1 ]
 then
-    echo "downloading galaxy target(s)..."	
-    wget -P legus/tab_files -q --show-progress -i tab_links.txt
+    echo "downloading galaxy mosaics..."	
     wget -P legus/frc_fits_files -q --show-progress -i frc_fits_links.txt
     
     cd legus/frc_fits_files/
@@ -23,7 +22,6 @@ then
     cd ../../ 
 fi
 
-echo "creating object patches..."
 bash create_dataset.sh 1
 echo "classifying objects..."
 python src/test_net.py \
@@ -34,7 +32,7 @@ python src/test_net.py \
                    --cuda  --gpu 0 \
                    --checkpoint starcnet.pth \
 
-python src/preds2table.py
+python src/preds2output.py
 
 ENDTIME=$(date +%s)
 echo "---------------------------------------------"

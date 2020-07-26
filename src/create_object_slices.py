@@ -38,28 +38,24 @@ if __name__ == '__main__':
    
     dirm = 'data/'
     targets_txt = 'targets.txt'
-    tabs_txt = 'tab_links.txt'
 
     # dir to save created dataset of current target galaxy:
     data_dir = dirm+dataset_info+str(sz)+'x'+str(sz)
     if not os.path.exists(data_dir):
         os.makedirs(data_dir)
-
-    with open(tabs_txt, "r+") as cx:
-            tab_filenames = cx.readlines()
-
+    
     with open(targets_txt, "r+") as x:
-            targets = x.readlines()
-            for i in range(len(targets)): # create one dataset file per target
-                target = targets[i][0:-1] # target galaxy (e.g.: ic4247, ngc4449, etc.)
-                tab = tab_filenames[i][0:-1] 
-                tab = tab.split('/')
-                tab = tab[-1] # extracting CAT filename from complete link
+        targets = x.readlines()
+        tab_filenames = du.get_tab_filenames(targets)
+        print('creating object arrays for galaxies %s'%(targets))
+        for i in range(len(targets)): # create one dataset file per target
+            target = du.get_name(targets[i]) # target galaxy (e.g.: ic4247, ngc4449, etc.)
+            tab = du.get_name(tab_filenames[i]) 
 
-                tin = time.time()
-                slices, coords, ids = du.create_target_db(tab, target, sz)
-                data = {'data':slices, 'coordinates':coords, 'ids':ids}
-                
-                with open(os.path.join(data_dir, target)+'.dat', 'wb') as outfile:
-                    pickle.dump(data, outfile, pickle.HIGHEST_PROTOCOL)
+            tin = time.time()
+            slices, coords, ids = du.create_target_db(tab, target, sz)
+            data = {'data':slices, 'coordinates':coords, 'ids':ids}
+              
+            with open(os.path.join(data_dir, target)+'.dat', 'wb') as outfile:
+                pickle.dump(data, outfile, pickle.HIGHEST_PROTOCOL)
 

@@ -44,7 +44,7 @@ if __name__ == '__main__':
     files = [f for f in os.listdir(data_dir) if isfile(join(data_dir, f))]
     files = sorted(files)
 
-    print('creating dataset(s)...')
+    print('creating dataset...')
     data = np.array([], dtype=np.int64).reshape(0,5,sz,sz)
     coords = np.array([], dtype=np.int64).reshape(0,2)
     ids = np.array([], dtype=np.int64).reshape(0,)

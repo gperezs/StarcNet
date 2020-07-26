@@ -87,38 +87,49 @@ def create_image(target=None):
     datac[:,:,1] = (4.52*g3*data3)
     datac[:,:,0] = (1.23*g4*data4 + g5*data5) / 2.
     datac = np.clip(datac, 0,1)
-    plt.imsave(os.path.join(savedir,"galaxy.png"), datac)
+    plt.imsave(os.path.join(savedir,target+".png"), datac)
 
 
 if __name__ == '__main__':
 
-    print('creating visualization...')
-    savedir = 'output'
+    scoresdir = 'output'
+    savedir = 'output/visualizations'
 
-    scores = np.load(os.path.join(savedir,'scores.npy'))
+    scores = np.load(os.path.join(scoresdir,'scores.npy'))
     preds = np.argmax(scores, axis=1)
 
     coords = []
+    galaxies = []
     with open('output/predictions.csv', 'r') as file:
         reader = csv.reader(file)
         for row in reader:
             coords.append(row[2:4])
-    target = row[0]
+            galaxies.append(row[0])
+    
     coords = np.asarray(coords[1::])
+    targets = np.unique(galaxies)[1::]
+    galaxies = np.asarray(galaxies[1::])
 
-    create_image(target)
-    img = mpimg.imread(os.path.join(savedir,'galaxy.png')) 
+    for target in targets:
+        print('creating %s visualization...'%(target))
+        idxg = np.where(galaxies == target)
+        coordsg = coords[idxg]
+        predsg = preds[idxg]
+        scoresg = scores[idxg]
+       
+        create_image(target)
+        img = mpimg.imread(os.path.join(savedir,target+'.png')) 
+        
+        for j in range(len(predsg)):
+            img = draw_circle(img,scoresg[j,:],predsg[j],coordsg[j,:])
 
-    for j in range(len(preds)):
-        img = draw_circle(img,scores[j,:],preds[j],coords[j,:])
+        img = (img - img.min())/(img.max() - img.min())
+        tp = 0.7
+        cbox = mpimg.imread('src/cbox.png')
+        img[100:568,100:1100,0:3] = cbox*tp + img[100:568,100:1100,0:3]*(1-tp)
 
-    img = (img - img.min())/(img.max() - img.min())
-    tp = 0.8
-    cbox = mpimg.imread('src/cbox.png')
-    img[100:568,100:1100,0:3] = cbox*tp + img[100:568,100:1100,0:3]*(1-tp)
-
-    plt.imsave(os.path.join(savedir,'predictions.png'),img)    
-    img_small = resize(img, (int(img.shape[0]/(img.shape[1]/2000)),2000), anti_aliasing=False, mode='reflect')
-    plt.imsave(os.path.join(savedir,'predictions.jpg'),img_small)
-    print("visualization saved to 'output/predictions.png'")
+        plt.imsave(os.path.join(savedir,target+'_predictions.png'),img)    
+        img_small = resize(img, (int(img.shape[0]/(img.shape[1]/2000)),2000), anti_aliasing=False, mode='reflect')
+        plt.imsave(os.path.join(savedir,target+'_predictions.jpg'),img_small)
+        print("visualization saved to '%s'"%(os.path.join(savedir,target+'_predictions.png')))
 
