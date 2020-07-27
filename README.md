@@ -129,9 +129,9 @@ $ python src/run_visualization.py
 ```
 The visualization script will create an image per galaxy previously classified 
 (i.e. a visualization of each galaxy in `output/predictions.csv`). 
-Each visualization output is saved into `output/<galaxy name>_predictions.png`
+Each visualization output is saved into `output/visualizations/<galaxy name>_predictions.png`
 
-See NGC1566 [demo](demo.ipynb) ipython notebook file.
+Seei also NGC1566 [demo](demo.ipynb) ipython notebook file.
 
 ### Run StarcNet with local data
 

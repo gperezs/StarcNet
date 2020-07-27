@@ -3,10 +3,9 @@
 .swp
 .sh.swp
 .dat
+.fits
 
 #folders
-output/
-legus/
 data/raw_32x32/
 model/__pycache__/
 src/__pycache__/
