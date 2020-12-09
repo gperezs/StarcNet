@@ -1,9 +1,9 @@
 # File extensions
-.pyc
-.swp
-.sh.swp
-.dat
-.fits
+*.pyc
+*.swp
+*.sh.swp
+*.dat
+*.fits
 
 #folders
 data/raw_32x32/

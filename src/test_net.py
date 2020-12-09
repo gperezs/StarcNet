@@ -87,6 +87,23 @@ def test(test_loader, args):
 
 if __name__ == '__main__':
 
+    args = parse_args()
+
+    # loading dataset
+    data_test, _, _ = du.load_db(os.path.join(args.data_dir,'test_'+args.dataset+'.dat'))
+    label_test = np.zeros((data_test.shape[0]))
+    mean = np.load(args.data_dir+'mean.npy')
+
+    # subtract mean
+    data_test -= mean[np.newaxis,:,np.newaxis,np.newaxis]
+
+    tdata = torch.from_numpy(data_test)
+    tdata = tdata.float()
+    tlabel = torch.from_numpy(np.transpose(label_test))
+    tlabel = tlabel.long()
+    testd = torch_du.TensorDataset(tdata, tlabel)
+    test_loader = torch_du.DataLoader(testd, batch_size=args.test_batch_size, shuffle=False) 
+    
     args.cuda = args.cuda and torch.cuda.is_available()
 
     os.environ["CUDA_VISIBLE_DEVICES"] = args.gpu
