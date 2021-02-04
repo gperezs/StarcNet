@@ -151,6 +151,24 @@ Seei also NGC1566 [demo](demo.ipynb) ipython notebook file.
 
 **Note:** The `.tab` file must have 3 columns, first one with ids and the last two with the coordinates. If your catalog only has the two columns of the coordinates you can use `src/add_ids_to_coords.py` file to add id column.
 
+## Cite
+
+If you find this code useful in your research, please consider citing:
+```
+@article{pmcmjas_apj2021,
+	doi = {10.3847/1538-4357/abceba},
+	url = {https://doi.org/10.3847/1538-4357/abceba},
+	year = 2021,
+	month = {feb},
+	publisher = {American Astronomical Society},
+	volume = {907},
+	number = {2},
+	pages = {100},
+	author = {Gustavo P{\'{e}}rez and Matteo Messa and Daniela Calzetti and Subhransu Maji and Dooseok E. Jung and Angela Adamo and Mattia Sirressi},
+	title = {{StarcNet}: Machine Learning for Star Cluster Identification},
+	journal = {The Astrophysical Journal}}
+```
+
 ## Acknowledgements
 
 This work is supported by the [National Science Foundation (NSF)](https://nsf.gov/index.jsp) of the United States under the award [\#1815267](https://nsf.gov/awardsearch/showAward?AWD_ID=1815267).
