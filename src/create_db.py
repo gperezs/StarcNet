@@ -41,8 +41,12 @@ if __name__ == '__main__':
     data_dir = dirm+dataset_info+str(sz)+'x'+str(sz)
 
     tin = time.time()
-    files = [f for f in os.listdir(data_dir) if isfile(join(data_dir, f))]
-    files = sorted(files)
+    #files = [f for f in os.listdir(data_dir) if isfile(join(data_dir, f))]
+    #files = sorted(files)
+    files = []
+    with open(targets_txt) as file:
+        for target in file:
+            files.append(target[:-1] + '.dat')
 
     print('creating dataset...')
     data = np.array([], dtype=np.int64).reshape(0,5,sz,sz)
@@ -52,6 +56,7 @@ if __name__ == '__main__':
     for i in range(len(files)):
         t_ini = time.time()
         file_name = join(data_dir,files[i])
+        if not os.path.exists(file_name): sys.exit('ERROR: file %s does not exist'%file_name)
         target_data, target_coords, target_ids = du.load_db(file_name)
         data = np.concatenate((data, target_data), axis=0)
         coords = np.concatenate((coords, target_coords), axis=0)
