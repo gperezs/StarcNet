@@ -82,9 +82,9 @@ def create_target_db(tab=None, target=None, sz=22):
     slices = np.asarray(slices) # Array of size (N x 5 x sz x sz)
     
     # save coordinates of each candidate and ids in .tab file
-    coords = np.concatenate((np.asarray(x, dtype=np.int)[:,np.newaxis], \
-                        np.asarray(y, dtype=np.int)[:,np.newaxis]),axis=1)
-    ids = np.asarray(sid, dtype=np.int)
+    coords = np.concatenate((np.asarray(x, dtype=np.int64)[:,np.newaxis], \
+                        np.asarray(y, dtype=np.int64)[:,np.newaxis]),axis=1)
+    ids = np.asarray(sid, dtype=np.int64)
     return slices, coords, ids
 
 
